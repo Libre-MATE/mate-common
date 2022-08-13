@@ -1,6 +1,6 @@
 AC_INIT([mate-common], [1.26.0], [https://github.com/Libre-MATE/mate-common])
 AC_PREREQ(2.60)
-
+AC_COPYRIGHT([Copyright (C) 2022 Libre MATE])
 AC_CONFIG_SRCDIR([macros/mate-autogen])
 
 AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz check-news])
