@@ -11,3 +11,5 @@ aclocaldir = $(datadir)/aclocal
 aclocal_DATA = $(MATE2_MACROS)
 
 bin_SCRIPTS = mate-autogen
+
+-include $(top_srcdir)/git.mk

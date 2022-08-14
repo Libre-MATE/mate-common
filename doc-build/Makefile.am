@@ -10,3 +10,5 @@ EXTRA_DIST =			\
 	xmldocs.make		\
 	mate-doc-common.in	\
 	README
+
+-include $(top_srcdir)/git.mk
