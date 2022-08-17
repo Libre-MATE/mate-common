@@ -12,5 +12,8 @@ PKG_NAME="mate-common"
     exit 1
 }
 
+REQUIRED_AUTOMAKE_VERSION=1.11
+REQUIRED_AUTORECONF_VERSION=2.60
+
 . $srcdir/macros/mate-autogen
 

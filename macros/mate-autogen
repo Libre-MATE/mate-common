@@ -23,6 +23,7 @@ test "$srcdir" || srcdir=.
 
 # default version requirements ...
 test "$REQUIRED_AUTORECONF_VERSION" || REQUIRED_AUTORECONF_VERSION=2.60
+test "$REQUIRED_AUTOMAKE_VERSION" || REQUIRED_AUTOMAKE_VERSION=1.11.2
 test "$REQUIRED_GLIB_GETTEXT_VERSION" || REQUIRED_GLIB_GETTEXT_VERSION=2.2.0
 test "$REQUIRED_INTLTOOL_VERSION" || REQUIRED_INTLTOOL_VERSION=0.25
 test "$REQUIRED_PKG_CONFIG_VERSION" || REQUIRED_PKG_CONFIG_VERSION=0.14.0
@@ -272,6 +273,9 @@ want_maintainer_mode=false
 
 version_check autoreconf AUTORECONF 'autoreconf' $REQUIRED_AUTORECONF_VERSION \
     "http://ftp.gnu.org/pub/gnu/autoconf/autoconf-$REQUIRED_AUTORECONF_VERSION.tar.gz"
+
+version_check automake AUTOMAKE automake $REQUIRED_AUTOMAKE_VERSION \
+    "http://ftp.gnu.org/pub/gnu/automake/automake-$REQUIRED_AUTOMAKE_VERSION.tar.xz"
 
 find_configure_files() {
     configure_ac=
